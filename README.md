@@ -1,4 +1,31 @@
-# Final
+# Popug Task Tracker
+
+## Topics and events
+
+- `accounts-stream` Topic/Exchange, `AccountCreated` event (https://github.com/davydovanton/popug-inventory/blob/separate-auth-service-in-docker/event_schema_registry/schemas/accounts/created/1.json)
+- `accounts-stream` Topic/Exchange, `AccountUpdated` event (https://github.com/davydovanton/popug-inventory/blob/separate-auth-service-in-docker/event_schema_registry/schemas/accounts/updated/1.json)
+- `accounts-stream` Topic/Exchange, `AccountDeleted` event (https://github.com/davydovanton/popug-inventory/blob/separate-auth-service-in-docker/event_schema_registry/schemas/accounts/deleted/1.json)
+- `accounts` Topic/Exchange, `AccountRoleChanged` event (https://github.com/davydovanton/popug-inventory/blob/separate-auth-service-in-docker/event_schema_registry/schemas/accounts/role_changed/1.json)
+
+## Routes
+
+- `localhost:3000` - main
+- `localhost:3000/oauth/applications` - oauth app managment
+
+## How to start oAuth with kafka broker
+
+```bash
+docker-compose build
+
+docker network create popug-jira
+
+docker-compose run oauth rake db:create
+docker-compose run oauth rake db:migrate
+
+docker-compose up
+```
+
+# System Architecture
 
 - [x]  Разобрать каждое требование на составляющие (актор, команда, событие, query). Определить, как все бизнес цепочки будут выглядеть и на какие шаги они будут разбиваться.
     

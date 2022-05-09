@@ -130,3 +130,18 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'account.Account'
+#
+# AUTHLIB_OAUTH_CLIENTS = {
+#     'ruby_oauth': {
+#         'client_id': os.environ.get("OAUTH_CLIENT_ID"),
+#         'client_secret': os.environ.get("OAUTH_CLIENT_SECRET"),
+#         'request_token_url': os.environ.get("OAUTH_REQUEST_URL"),
+#         'request_token_params': None,
+#         'access_token_url': os.environ.get("OAUTH_ACCESS_URL"),
+#         'access_token_params': None,
+#         'refresh_token_url': None,
+#         'authorize_url': os.environ.get("OAUTH_AUTH_URL"),
+#         'api_base_url': os.environ.get("OAUTH_API_BASE"),
+#         'client_kwargs': None
+#     }
+# }

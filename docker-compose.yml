@@ -76,6 +76,10 @@ services:
       SQL_PASSWORD: 'password'
       SQL_HOST: 'db'
       SQL_PORT: '5432'
+      FLUSH_DB: '0'
+      OAUTH_CLIENT_ID: 'SeVpcg_qW-2mlXBi48m6rxQ7P91qf-x3DKa7AbjBxPg'
+      OAUTH_CLIENT_SECRET: 'QNeDxd6B__wZcnn4qxMz3iKOIcVOrRu0fRVwkXuVsdw'
+      OAUTH_AUTH_URL: 'http://localhost:3000/oauth/authorize'
     depends_on:
       - db
       - broker

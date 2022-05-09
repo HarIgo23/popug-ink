@@ -9,6 +9,8 @@ djangorestframework = "*"
 kafka-python = "*"
 psycopg-binary = "*"
 psycopg2-binary = "*"
+authlib = "*"
+requests = "*"
 
 [dev-packages]
 

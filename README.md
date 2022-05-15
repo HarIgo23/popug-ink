@@ -12,6 +12,7 @@
 - `localhost:3000` - main
 - `localhost:3000/oauth/applications` - oauth app managment
 - `localhost:8000' - task tracker
+- `localhost:8080` - accounting
 
 ## How to start oAuth with kafka broker
 
